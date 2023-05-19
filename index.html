@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 
 <body>
@@ -25,7 +26,11 @@
 			<a href="#contact">Kontakt</a>
             <span>123 456 789</span>
 		</nav>
-        
+        <div class="btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
 	</header>
 
     <!--    główna  -->
@@ -87,22 +92,22 @@
     <section id="services">
         <h1>Nasze usługi</h1>
         <p>Pomożemy Ci urzeczywistnić Twoje marzenia.</p>
-        <div class="container">
-            <div class="box">
+        <div class="services-container">
+            <div class="container-box">
                 <img src="images/pexels-mark-mccammon-1080721.jpg">
                 <div class="content">
                     <h3>Kuchnie</h3>
                     <p>Remont kuchni to nie tylko usunięcie starych mebli i rozstawienie nowych, ale złożone prace, które często wymagają pomocy różnych fachowców. Niezależnie od tego, czy to remont kuchni w domu jednorodzinnym czy też w mieszkaniu w bloku, warto się do niego dobrze przygotować, aby zaoszczędzić sobie zbędnych kosztów, opóźnień i stresu.</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="container-box">
                 <img src="images/pexels-vecislavas-popa-1571461.jpg">
                 <div class="content">
                     <h3>Łazienki</h3>
                     <p>Remont łazienki to nie tylko skucie starych kafli czy wymiana urządzeń na nowe. Często przerabiamy instalacje wodno- kanalizacyjne, zmieniamy miejsce urządzeń sanitarnych, zamieniamy wannę na brodzik, montujemy nowy grzejnik, budujemy nowe ścianki, np. by ukryć pralkę, czy instalujemy nowe punkty oświetleniowe. </p>
                 </div>
             </div>
-            <div class="box">
+            <div class="container-box">
                 <img src="images/pexels-houzlook-com-3797991.jpg">
                 <div class="content">
                     <h3>Wnętrza</h3>
@@ -256,6 +261,31 @@
                 enabled: true
             }
         });
+    </script>
+
+    <script>
+    /*document.querySelector('.btn').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('active');
+    });
+    
+    document.querySelectorAll('nav a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            document.querySelector('nav').classList.remove('active');
+        });
+    });*/
+
+        const button = document.querySelector(".btn");
+        const navMenu = document.querySelector("nav");
+
+        button.addEventListener("click", () => {
+            button.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll("nav").forEach(n => n.addEventListener("click", () => {
+            button.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
     </script>
 
 </body>
