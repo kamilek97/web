@@ -145,6 +145,62 @@ header .btn .bar {
 }
 
 
+/*  price   */
+
+#price {
+    display: none;
+    padding: 8vw;
+    align-items: center;
+}
+
+#price h2 {
+    padding: 2vw 0;
+}
+
+#price p {
+    padding: 2vw 0;
+}
+
+#price .btny {
+    padding-top: 2vw;
+}
+
+#price .btny a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1rem;
+    padding: 15px 35px;
+    background-color: #1e1e1e;
+    transition: .3s ease;
+}
+
+#price .btny a:hover {
+    background-color: #a26028;
+}
+
+#price table {
+    width: 60%;
+}
+
+#price td {
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .15);
+}
+
+#price input {
+    outline: none;
+    border: none;
+}
+
+#price button {
+    margin-top: 2vw;
+    padding: 15px 35px;
+    border: none;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+
 /*  about   */
 
 #about {
@@ -449,9 +505,14 @@ form .write-box textarea {
 }
 
 .user-details .input-box input:hover,
-.user-details .input-box input:focus {
+.user-details .input-box input:focus:invalid {
     border-bottom: 2px solid;
 }
+
+/*.user-details .input-box input:valid {
+    color: rgb(255,64,64);
+    border-bottom: 2px solid;
+}*/
 
 .write-box input:hover,
 .write-box input:focus {
@@ -516,6 +577,13 @@ footer .copyrights .socials a {
 footer .copyrights .socials a:hover {
     color: #a26028;
 }
+
+@media (max-width: 1200px) {
+    
+    #price table {
+        width: 100%;
+    }
+} 
 
 @media (max-width: 991px) {
 
@@ -672,6 +740,11 @@ footer .copyrights .socials a:hover {
         font-size: .8rem;
         font-weight: 200;
     }
+    
+    #price {
+        padding-top: 20vw;
+        overflow: scroll;
+    }
 }
 
 @media (max-width: 500px) {
@@ -683,6 +756,10 @@ footer .copyrights .socials a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #price table {
+        width: 20%;
     }
 }
 
