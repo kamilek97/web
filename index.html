@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -22,7 +21,7 @@
 			<a class="active" href="#home">Główna</a>
 			<a href="#about">O nas</a>
 			<a href="#services">Usługi</a>
-			<a href="#projects">Realizacje</a></li>
+			<a href="#projects">Realizacje</a>
 			<a href="#contact">Kontakt</a>
             <span>123 456 789</span>
 		</nav>
@@ -42,10 +41,266 @@
             miasta Lublin i okolicy. Od lat z sukcesami świadczymy usługi remontowe na rzecz klientów indywidualnych i
             biznesowych zapewniając kompleksową i profesjonalną obsługę na każdym etapie realizacji prac.</p>
         <div class="btny">
-            <a class="quotation" href="#contact">Darmowa wycena</a>
+            <a class="quotation" href="#price" onclick="document.querySelector('#price').style.display = 'block';">Darmowa wycena</a>
         </div>
-
     </section>
+
+    <div id="price">
+        <table>
+            <tr><th><h2>Prace malarskie</h2></th></tr>
+            <tr>
+                <td>Usuwanie starej farby</td>
+                <td><input type="hidden" id="price1" value="12">12 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value1" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel1">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Naprawa ubytków w starych ścianach</td>
+                <td><input type="hidden" id="price2" value="18">18 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value2" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel2">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Mycie ścian i sufitów</td>
+                <td><input type="hidden" id="price3" value="14">14 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value3" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel3">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Gruntowanie ścian i sufitów</td>
+                <td><input type="hidden" id="price4" value="8">8 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value4" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel4">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Dwukrotne malowanie ścian i sufitów</td>
+                <td><input type="hidden" id="price5" value="24">24 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value5" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel5">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Malowanie dekoracyjne</td>
+                <td><input type="hidden" id="price6" value="100">100 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value6" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel6">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Dwukrotne malowanie drzwi, okien</td>
+                <td><input type="hidden" id="price7" value="150">150 zł/szt</td>
+                <td><input type="number" id="value7" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel7">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Dwukrotne malowanie grzejników żeliwnych (za żeberko)</td>
+                <td><input type="hidden" id="price8" value="30">30 zł/szt</td>
+                <td><input type="number" id="value8" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel8">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Dwukrotne malowanie rur (cena za m)</td>
+                <td><input type="hidden" id="price9" value="25">25 zł/m</td>
+                <td><input type="number" id="value9" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel9">0 zł</label></td>
+            </tr>
+            <tr><th><h2>Wykończenie ścian</h2></th></tr>
+            <tr>
+                <td>Skuwanie płytek</td>
+                <td><input type="hidden" id="price10" value="60">60 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value10" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel10">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Zrywanie tapet</td>
+                <td><input type="hidden" id="price11" value="12">12 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value11" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel11">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie tynków (bez gładzi)</td>
+                <td><input type="hidden" id="price12" value="55">55 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value12" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel12">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Ułożenie gładzi gipsowej ze szlifowaniem</td>
+                <td><input type="hidden" id="price13" value="56">56 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value13" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel13">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Układanie płytek na ścianach</td>
+                <td><input type="hidden" id="price14" value="120">120 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value14" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel14">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie okładziny drewnianej</td>
+                <td><input type="hidden" id="price15" value="200">200 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value15" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel15">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie okładziny drewnianej lamelowej</td>
+                <td><input type="hidden" id="price16" value="150">150 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value16" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel16">0 zł</label></td>
+            </tr>
+            <tr><th><h2>Wykończenie podłogi</h2></th></tr>
+            <tr>
+                <td>Skucie płytek i wyczyszczenie podłoża</td>
+                <td><input type="hidden" id="price17" value="60">60 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value17" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel17">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Zerwanie parkietu i wyczyszczenie podłoża</td>
+                <td><input type="hidden" id="price18" value="50">50 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value18" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel18">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie wylewki samopoziomującej</td>
+                <td><input type="hidden" id="price19" value="45">45 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value19" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel19">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Układanie płytek na podłodze (średni format)</td>
+                <td><input type="hidden" id="price20" value="110">110 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value20" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel20">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Układanie płytek na podłodze (duży i bardzo duży format)</td>
+                <td><input type="hidden" id="price21" value="180">180 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value21" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel21">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Układanie mozaiki z glazury</td>
+                <td><input type="hidden" id="price22" value="220">220 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value22" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel22">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Układanie wykładziny podłogowej</td>
+                <td><input type="hidden" id="price23" value="40">40 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value23" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel23">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Układanie paneli podłogowych bez klejenia</td>
+                <td><input type="hidden" id="price24" value="42">42 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value24" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel24">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Układanie deski podłogowej (klejenie)</td>
+                <td><input type="hidden" id="price25" value="120">120 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value25" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel25">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Układanie paneli lub parkietu w jodełkę (klejenie)</td>
+                <td><input type="hidden" id="price26" value="150">150 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value26" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel26">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Cyklinowanie podłogi drewnianej</td>
+                <td><input type="hidden" id="price27" value="45">45 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value27" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel27">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Lakierowanie, olejowanie podłogi drewnianej (warstwa)</td>
+                <td><input type="hidden" id="price28" value="25">25 zł/m<sup>2</sup></td>
+                <td><input type="number" id="value28" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel28">0 zł</label></td>
+            </tr>
+            <tr><th><h2>Instalacje elektryczne i hydrauliczne</h2></th></tr>
+            <tr>
+                <td>Wykonanie dodatkowego punktu elektrycznego z materiałem</td>
+                <td><input type="hidden" id="price29" value="100">100 zł/szt</td>
+                <td><input type="number" id="value29" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel29">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Montaż lampy, żyrandola</td>
+                <td><input type="hidden" id="price30" value="120">120 zł/szt</td>
+                <td><input type="number" id="value30" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel30">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie instalacji wodno-kanalizacyjnej z rur plastikowych (punkt)</td>
+                <td><input type="hidden" id="price31" value="250">250 zł/szt</td>
+                <td><input type="number" id="value31" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel31">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie instalacji ogrzewania podłogowego z materiałem</td>
+                <td><input type="hidden" id="price32" value="280">280 zł/szt</td>
+                <td><input type="number" id="value32" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel32">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie podejścia pod umywalkę, wannę itp. z materiałem</td>
+                <td><input type="hidden" id="price33" value="400">400 zł/szt</td>
+                <td><input type="number" id="value33" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel33">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie stelaża podtynkowego</td>
+                <td><input type="hidden" id="price34" value="250">250 zł/szt</td>
+                <td><input type="number" id="value34" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel34">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Montaż bidetu, wc, umywalki</td>
+                <td><input type="hidden" id="price35" value="180">180 zł/szt</td>
+                <td><input type="number" id="value35" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel35">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Montaż wanny</td>
+                <td><input type="hidden" id="price36" value="400">400 zł/szt</td>
+                <td><input type="number" id="value36" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel36">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Montaż kabiny prysznicowej</td>
+                <td><input type="hidden" id="price37" value="450">450 zł/szt</td>
+                <td><input type="number" id="value37" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel37">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Montaż baterii</td>
+                <td><input type="hidden" id="price38" value="250">250 zł/szt</td>
+                <td><input type="number" id="value38" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel38">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Wykonanie odpływu liniowego</td>
+                <td><input type="hidden" id="price39" value="400">400 zł/szt</td>
+                <td><input type="number" id="value39" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel39">0 zł</label></td>
+            </tr>
+            <tr>
+                <td>Podłączenie grzejnika</td>
+                <td><input type="hidden" id="price40" value="150">150 zł/szt</td>
+                <td><input type="number" id="value40" placeholder="Wprowadź wartość"></td>
+                <td><label id="myLabel40">0 zł</label></td>
+            </tr>
+            
+        </table>
+        <div id="calculate">
+            <button id="myButton">Oblicz</button>
+            <h2>Łączny koszt: <label id="myLabel0">0 zł</label></h2>
+        </div>
+        <div class="btny">
+            <a class="quotation" href="#home" onclick="document.querySelector('#price').style.display = 'none';">Zamknij kalkulator</a>
+        </div>
+    </div>
 
     <!--    O nas   -->
     <section id="about">
@@ -74,7 +329,7 @@
             <div class="box">
 
                 <div class="left">
-                    <img src="images/pexels-thoi-nam-cao-15124970.jpg">
+                    <img src="images/pexels-thoi-nam-cao-15124970.jpg" alt="">
                 </div>
                 <div class="right">
                     <h2>Remonty to nasza pasja</h2>
@@ -94,21 +349,21 @@
         <p>Pomożemy Ci urzeczywistnić Twoje marzenia.</p>
         <div class="services-container">
             <div class="container-box">
-                <img src="images/pexels-mark-mccammon-1080721.jpg">
+                <img src="images/pexels-mark-mccammon-1080721.jpg" alt="">
                 <div class="content">
                     <h3>Kuchnie</h3>
                     <p>Remont kuchni to nie tylko usunięcie starych mebli i rozstawienie nowych, ale złożone prace, które często wymagają pomocy różnych fachowców. Niezależnie od tego, czy to remont kuchni w domu jednorodzinnym czy też w mieszkaniu w bloku, warto się do niego dobrze przygotować, aby zaoszczędzić sobie zbędnych kosztów, opóźnień i stresu.</p>
                 </div>
             </div>
             <div class="container-box">
-                <img src="images/pexels-vecislavas-popa-1571461.jpg">
+                <img src="images/pexels-vecislavas-popa-1571461.jpg"  alt="">
                 <div class="content">
                     <h3>Łazienki</h3>
                     <p>Remont łazienki to nie tylko skucie starych kafli czy wymiana urządzeń na nowe. Często przerabiamy instalacje wodno- kanalizacyjne, zmieniamy miejsce urządzeń sanitarnych, zamieniamy wannę na brodzik, montujemy nowy grzejnik, budujemy nowe ścianki, np. by ukryć pralkę, czy instalujemy nowe punkty oświetleniowe. </p>
                 </div>
             </div>
             <div class="container-box">
-                <img src="images/pexels-houzlook-com-3797991.jpg">
+                <img src="images/pexels-houzlook-com-3797991.jpg"  alt="">
                 <div class="content">
                     <h3>Wnętrza</h3>
                     <p>Remont wnętrza najczęściej zaczyna się od rozbiórki. Pierwszym krokiem przy takiej realizacji zawsze jest doprowadzenie pomieszczenia do stanu początkowego, czyli inaczej mówiąc stanu surowego. To wtedy pojawiają się niespodzianki (krzywe ściany pod boazerią, stare instalacje do wymiany, niemożliwe do przeprowadzenia zmiany), które mają wpływ na dalsze prace.</p>
@@ -124,7 +379,7 @@
         <div class="container">
             <div class="box">
                 <a href="images/pexels-level-media-3016430.jpg">
-                    <img class="image__img" src="images/pexels-level-media-3016430.jpg">
+                    <img class="image__img" src="images/pexels-level-media-3016430.jpg" alt="">
                 
                     <div class="image__overlay">
                         <div class="image__title">Kuchnie</div>
@@ -133,7 +388,7 @@
             </div>
             <div class="box">
                 <a href="images/pexels-rodolfo-boscan-14345209.jpg">
-                    <img class="image__img" src="images/pexels-rodolfo-boscan-14345209.jpg">
+                    <img class="image__img" src="images/pexels-rodolfo-boscan-14345209.jpg" alt="">
                 
                     <div class="image__overlay">
                         <div class="image__title">Łazienki</div>
@@ -142,7 +397,7 @@
             </div>
             <div class="box">
                 <a href="images/pexels-carlos-diaz-709767.jpg">
-                    <img class="image__img" src="images/pexels-carlos-diaz-709767.jpg">
+                    <img class="image__img" src="images/pexels-carlos-diaz-709767.jpg"  alt="">
                 
                     <div class="image__overlay">
                         <div class="image__title">Wnętrza</div>
@@ -151,7 +406,7 @@
             </div>
             <div class="box">
                 <a href="images/pexels-vecislavas-popa-1571458.jpg">
-                    <img class="image__img" src="images/pexels-vecislavas-popa-1571458.jpg">
+                    <img class="image__img" src="images/pexels-vecislavas-popa-1571458.jpg" alt="">
                 
                     <div class="image__overlay">
                         <div class="image__title">Oświetlenie</div>
@@ -160,7 +415,7 @@
             </div>
             <div class="box">
                 <a href="images/pexels-photomix-company-14953886.jpg">
-                    <img class="image__img" src="images/pexels-photomix-company-14953886.jpg">
+                    <img class="image__img" src="images/pexels-photomix-company-14953886.jpg"  alt="">
                 
                     <div class="image__overlay">
                         <div class="image__title">Hydraulika</div>
@@ -169,7 +424,7 @@
             </div>
             <div class="box">
                 <a href="images/pexels-ksenia-chernaya-5767595.jpg">
-                    <img class="image__img" src="images/pexels-ksenia-chernaya-5767595.jpg">
+                    <img class="image__img" src="images/pexels-ksenia-chernaya-5767595.jpg" alt="">
                 
                     <div class="image__overlay">
                         <div class="image__title">Elektryka</div>
@@ -193,7 +448,7 @@
             </div>
             <div class="container">
                 <div class="content">
-                    <form action="#">
+                    <form action="javascript:alert('Dziękujemy za wypełnienie formularza. Skontaktujemy się najszyciej jak to możliwe!')">
                         <div class="user-details">
                             <div class="input-box">
                                 <span class="details">Imię</span>
@@ -239,7 +494,7 @@
     <!--    footer  -->
     <footer>
         <div class="copyrights">
-            <p>&copy2023 M&K Remonty</p>
+            <p>&copy;2023 M&K Remonty</p>
             <div class="socials">
                 <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
@@ -250,6 +505,7 @@
 
     <!--    js  -->
     <script src="main.js"></script>
+    <script src="calculate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
@@ -264,16 +520,6 @@
     </script>
 
     <script>
-    /*document.querySelector('.btn').addEventListener('click', function() {
-        document.querySelector('nav').classList.toggle('active');
-    });
-    
-    document.querySelectorAll('nav a').forEach(function(link) {
-        link.addEventListener('click', function() {
-            document.querySelector('nav').classList.remove('active');
-        });
-    });*/
-
         const button = document.querySelector(".btn");
         const navMenu = document.querySelector("nav");
 
