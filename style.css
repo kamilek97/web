@@ -149,7 +149,7 @@ header .btn .bar {
 
 #price {
     display: none;
-    padding: 8vw;
+    padding: 8vw 8vw 0 8vw;
     align-items: center;
 }
 
