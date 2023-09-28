@@ -101,7 +101,6 @@ header .btn .bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     padding: 8vw 0 8vw 0;
 }
 
@@ -180,6 +179,12 @@ header .btn .bar {
 
 #price table {
     width: 60%;
+}
+
+#price th {
+	font-size: 1.5em;
+	padding: 1em;
+	text-align: center;
 }
 
 #price td {
@@ -265,7 +270,6 @@ header .btn .bar {
 }
 
 #about .box .right a {
-    align-items: left;
     text-decoration: none;
     color: #f5f5f5;
     font-size: 1rem;
