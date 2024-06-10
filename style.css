@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +17,31 @@ section {
     min-height: 100vh;
 }
 
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
 
 /*  navigation  */
 
@@ -29,10 +52,10 @@ header {
     right: 0;
 	background-color: #f5f5f5;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, .15);
-	z-index: 100;
+	z-index: 1;
     display: flex;
     flex-wrap: wrap;
-	padding: 3vw 8vw;
+	padding: 3em 10em;
     justify-content: space-between;
     align-items: center;
 }
@@ -101,39 +124,37 @@ header .btn .bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 8vw 0 8vw 0;
+    padding: 8em 10em;
 }
 
 #home h1 {
-    width: 50%;
     color: #f5f5f5;
-    font-size: 4rem;
     font-weight: 600;
-    text-align: justify;
+    text-align: left;
     letter-spacing: 1px;
-    padding: 4vw 0 1vw 8vw;
+    width: 60%;
+    padding-bottom: 10px;
 }
 
 #home p {
-    width: 45%;
+    width: 60%;
     color: #f5f5f5;
-    font-size: 1rem;
     letter-spacing: 1px;
-    text-align: justify;
-    padding: 0 0 2vw 8vw;
+    text-align: left;
     
 }
 
 #home .btny {
-    padding-top: 2rem;
+    margin-top: 2em;
 }
 
 #home a {
+    width: max-content;
     text-decoration: none;
     color: #1e1e1e;
     font-size: 1rem;
     padding: 15px 35px;
-    margin-left: 8vw;
+    margin-top: 2em;
     background-color: #f5f5f5;
     transition: .3s ease;
 }
@@ -148,38 +169,35 @@ header .btn .bar {
 
 #price {
     display: none;
-    padding: 8vw 8vw 0 8vw;
+    padding: 8em 8em 0 8em;
     align-items: center;
 }
 
 #price h2 {
-    padding: 2vw 0;
+    padding: 2em 0;
 }
 
 #price p {
-    padding: 2vw 0;
+    padding: 2em 0;
 }
 
-#price .btny {
-    padding-top: 2vw;
-}
-
-#price .btny a {
+#price a {
     text-decoration: none;
     color: #f5f5f5;
     font-size: 1rem;
     padding: 15px 35px;
+    margin-top: 2em;
     background-color: #1e1e1e;
     transition: .3s ease;
 }
 
-#price .btny a:hover {
+#price a:hover {
     background-color: #a26028;
 }
 
-#price table {
+/* #price table {
     width: 60%;
-}
+} */
 
 #price th {
 	font-size: 1.5em;
@@ -198,36 +216,42 @@ header .btn .bar {
 }
 
 #price button {
-    margin-top: 2vw;
+    margin-top: 2em;
     padding: 15px 35px;
     border: none;
     background-color: #1e1e1e;
     color: #f5f5f5;
 }
 
+#price button:hover {
+    background: #a26028;
+    cursor: pointer;
+}
+
+#price h3 {
+    margin: 2em 0;
+}
+
 
 /*  about   */
 
 #about {
-    text-align: center;
     align-items: center;
-    padding: 10vw 8vw 8vw 8vw;
+    padding: 8em 10em;
 }
 
-#about h1 {
-    font-size: 3rem;
-    color: #1e1e1e;
-    padding-bottom: 1rem;
+#about h2 {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 #about p {
     text-align: justify;
-    font-size: 1rem;
     color: #1e1e1e;
 }
 
 #about .box {
-    padding-top: 4vw;
+    padding-top: 4em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 2rem;
@@ -240,32 +264,30 @@ header .btn .bar {
 
 #about .box .left img {
     width: 100%;
+	height: auto;
     object-fit: cover;
 }
 
 #about .box .right {
-    margin: auto 4rem;
+    margin: auto 4em;
     align-items: center;
-    text-align: center;
 }
 
-#about .box .right h2{
+#about .box .right h3{
     text-align: left;
     color: #1e1e1e;
-    font-size: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 10px;
 }
 
 #about .box .right p {
-    font-size: 1rem;
     color: #1e1e1e;
-    padding-bottom: 2vw;
+    padding-bottom: 2em;
 }
 
 #about .box .right .btny {
     width: 100%;
     height: 100%;
-    padding-top: 2rem;
+    padding-top: 2em;
     text-align: left;
 }
 
@@ -287,24 +309,32 @@ header .btn .bar {
 
 #services {
     text-align: center;
-    padding: 10vw 8vw 8vw 8vw;
+    padding: 8em 10em;
     background-color: #f5f5f5;
 }
 
-#services h1 {
-    font-size: 3rem;
-    padding-bottom: 1vw;
+#services h2 {
+    padding-bottom: 10px;
+	/* position: relative; */
 }
+/* #services h1:after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 35px;
+    height: 5px;
+    right: calc(50% - 15px);
+    bottom: 0;
+} */
 #services p {
-    font-size: 1rem;
-    padding-bottom: 2vw;
+    padding-bottom: 2em;
 }
 
 #services .services-container {
-    padding-top: 2rem;
+    padding-top: 2em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 2em;
 }
 
 #services .services-container .container-box {
@@ -316,8 +346,9 @@ header .btn .bar {
 
 #services .services-container .container-box img {
     width: 100%;
-    height: auto;
-    padding-bottom: 2vw;
+    height: 350px;
+	object-fit: cover;
+    padding-bottom: 2em;
 }
 
 #services .services-container .container-box .content {
@@ -326,12 +357,11 @@ header .btn .bar {
 
 #services .services-container .container-box .content h3 {
     font-size: 1.3rem;
-    padding-bottom: 2vw;
+    padding-bottom: 20px;
 }
 
 #services .services-container .container-box .content p {
-    font-size: 1rem;
-    padding: 0 2rem;
+    padding: 0 2em;
 }
 
 
@@ -339,24 +369,22 @@ header .btn .bar {
 
 #projects {
     text-align: center;
-    padding: 10vw 0 8vw 0;
+    padding: 8em 10em;
 }
 
-#projects h1 {
-    font-size: 3rem;
-    padding-bottom: 1vw;
+#projects h2 {
+    padding-bottom: 10px;
 }
 
 #projects p {
-    font-size: 1rem;
-    padding-bottom: 2vw;
+    padding-bottom: 2em;
 }
 
 #projects .container {
-    margin-top: 3rem;
+    margin-top: 3em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
-    gap: 2rem;
+    gap: 2em;
     
 }
 
@@ -404,30 +432,27 @@ header .btn .bar {
 /*  kontakt */
 
 #contact {
-    padding-top: 10vw;
+    padding-top: 10em;
     background: #f5f5f5;
 }
 
 #contact .box {
     display: flex;
-    padding: 0 4vw 8vw 4vw;
+    padding: 0 4em 8em 4em;
 }
 
 #contact .box .info {
-    text-align: left;
-    align-items: center;
-    justify-content: center;
     margin: auto;
+    text-align: left;
 }
 
-#contact .box .info h1 {
-    font-size: 3rem;
-    padding-bottom: 1vw;
+#contact .box .info h2 {
+    padding-bottom: 10px;
+    font-weight: 500;
 }
 
 #contact .box .info p {
-    font-size: 1rem;
-    padding-bottom: 1vw;
+    padding-bottom: 2em;
     font-weight: 300;
 }
 
@@ -439,6 +464,7 @@ header .btn .bar {
     max-width: 600px;
     width: 100%;
     margin: auto;
+    padding-left: 20px;
 }
 
 .content form .user-details {
@@ -539,6 +565,7 @@ form .button input {
     background: #1e1e1e;
     color: #f5f5f5;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 form .button input:hover {
@@ -559,7 +586,7 @@ form .button input:hover {
 /*  footer  */
 
 footer {
-    padding: 4vw 16vw;
+    padding: 4em 16em;
     background: #f5f5f5;
     align-items: center;
 }
@@ -583,16 +610,9 @@ footer .copyrights .socials a:hover {
 }
 
 @media (max-width: 1200px) {
-    
-    #price table {
-        width: 100%;
-    }
-} 
-
-@media (max-width: 991px) {
-
     header .btn {
         display: block;
+		
     }
 
     header .btn.active .bar:nth-child(2) {
@@ -611,19 +631,20 @@ footer .copyrights .socials a:hover {
 	}
 
     nav span {
-        padding: 1rem 0;
+        padding: 1em 0;
     }
 
     nav {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 0;
         gap: 0;
         flex-direction: column;
         background-color: #f5f5f5;
         width: 100%;
         text-align: center;
         transition: .3s;
+		padding-top: 2em;
     }
 
     nav a {
@@ -633,11 +654,30 @@ footer .copyrights .socials a:hover {
     nav.active {
         left: 0;
     }
+}
 
-    #home h1,
-    #home p {
+@media (max-width: 991px) {
+
+    header {
+        padding: 2em 4em;
+    }
+
+    #home {
+        padding: 4em;
+    }
+
+    #home h1 {
         width: 100%;
-        padding: 0 8vw;
+        font-size: 3rem;
+    }
+	
+	#home p {
+		padding: 0;
+        width: 100%;
+	}
+
+    #about {
+        padding: 8em 4em;
     }
     #about .box {
         display: flex;
@@ -648,159 +688,164 @@ footer .copyrights .socials a:hover {
         margin: auto;
     }
 
+    #about .box .right h3 {
+        text-align: center;
+    }
+
+    #services {
+        padding: 8em 4em;
+    }
+
     #services .services-container {
         display: flex;
         flex-direction: column;
+    }
+
+    #services .services-container .container-box .content p {
+        padding: 0;
+    }
+
+    #projects {
+        padding: 8em 4em;
+    }
+
+    #contact {
+        padding-top: 8em;
     }
 
     #contact .box {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        padding: 0 4em 4em 4em;
+        align-items: center;
+    }
+    #contact .box .container {
+        padding-left: 0;
+    }
+	
+	#services .services-container .container-box img {
+		width: 100%;
+		height: 500px;
+		object-fit: cover;
+		padding-bottom: 2em;
+	}
+
+    footer {
+        padding: 4em 8em;;
     }
 }
 
 @media (max-width: 600px) {
 
     #home h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    #home p {
-        font-size: .8rem;
-    }
-
-    #about {
-        padding-top: 20vw;
-    }
-
-    #about h1 {
         font-size: 2rem;
+        padding-bottom: 10px;
     }
 
-    #about p {
-        font-size: .8rem;
+    #about h2 {
+        font-size: 2rem;
+        padding: 10px;
     }
 
-    #about .box .right h2 {
+    #about .box .right h3 {
         font-size: 1.8rem;
     }
 
-    #about .box .right p {
-        font-size: .8rem;
-    }
-
-    #services {
-        padding-top: 20vw;
-    }
-
-    #services h1 {
+    #services h2 {
         font-size: 2rem;
+        padding-bottom: 10px;
     }
 
-    #services p {
-        font-size: .8rem;
-    }
+    #services .services-container .container-box img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		padding-bottom: 2em;
+	}
 
-    #services .services-container .container-box .content p {
-        font-size: .8rem;
-    }
-
-    #projects {
-        padding-top: 20vw;
-    }
-
-    #projects h1 {
+    #projects h2{
         font-size: 2rem;
-    }
-
-    #projects p {
-        font-size: .8rem;
+        padding-bottom: 10px;
     }
 
     #projects .container {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 
-    #contact {
-        padding-top: 20vw;
-    }
-
-    #contact .box .info h1 {
+    #contact h2 {
         font-size: 2rem;
-    }
-
-    #contact .box .info p {
-        font-size: .8rem;
+        padding-bottom: 10px;
     }
 
     form .input-box span.details {
-        font-size: .8rem;
+        font-size: 1rem;
         font-weight: 200;
     }
 
     form .write-box span.details {
-        font-size: .8rem;
+        font-size: 1rem;
         font-weight: 200;
     }
     
     #price {
-        padding-top: 20vw;
+        padding-top: 20em;
         overflow: scroll;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 479px) {
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 1em 2em;
+    }
+
+    #home {
+        padding: 6em 2em;
+    }
+	#home h1 {
+        padding-bottom: 10px;
+	}
+	
+	#home p {
+        width: 100%;
+	}
+
+    #about {
+        padding: 6em 2em;
+    }
+
+    #services {
+        padding: 6em 2em;
+    }
+
+    #projects {
+        padding: 6em 2em;
+    }
+
+    #contact {
+        padding-top: 6em;
+    }
+
+    #contact .box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 2em 2em 2em;
+        align-items: center;
+    }
+
     footer {
-        padding: 8vw 0;
+        padding: 2em 2em;
     }
 
     footer .copyrights {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    #price table {
-        width: 20%;
-    }
-}
-
-@media (max-width: 389px) {
-
-
-    #home h1 {
-        font-size: 1.7rem;
-    }
-}
-
-@media (max-width: 359px) {
-    #home p {
-        font-size: .6rem;
-    }
-
-    #about h1 {
-        font-size: 1.7rem;
-    }
-
-    #about p {
-        font-size: .6rem;
-    }
-
-    #services p {
-        font-size: .6rem;
-    }
-
-    #projects p {
-        font-size: .6rem;
-    }
-
-    #projects .container {
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    #contact .box .info p {
-        font-size: .6rem;
     }
 }
